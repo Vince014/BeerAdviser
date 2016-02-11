@@ -29,9 +29,8 @@
         android:layout_height="wrap_content"
         android:text="@string/find_beer"
         android:id="@+id/button_findBeer"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="161dp"/>
+        android:layout_below="@+id/spinner_beerColors"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,6 +41,38 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/button_findBeer" />
+        android:layout_alignEnd="@+id/button_findBeer"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editText_Comment"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText_Comment"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/textView_brands"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button_Save"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignEnd="@+id/spinner_beerColors" />
 
 </RelativeLayout>
